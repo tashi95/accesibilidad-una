@@ -1,0 +1,21 @@
+{
+  "name": "accesibilidad-una",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --reporter=list",
+    "lighthouse": "lighthouse https://www.una.ac.cr/ --only-categories=accessibility --output=html --output-path=./reportes/lighthouse-una.html",
+    "accesibilidad": "npm run test && npm run lighthouse"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "chrome-launcher": "^1.2.2",
+    "lighthouse": "^13.5.0",
+    "playwright": "^1.64.0"
+  }
+}
